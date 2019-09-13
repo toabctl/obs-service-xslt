@@ -1,0 +1,18 @@
+<service name="xslt">
+  <summary>Run xslt . This service is usually called during runtime</summary>
+  <description>
+    This service runs xsltproc to produce an .xml (or .kiwi) output file.
+  </description>
+  <parameter name="input-file">
+    <description>
+      Name of the input file. Can be used multiple times.
+      Note: The order of the input files is important! Usually the
+      first file should be a .xsl file.
+    </description>
+  </parameter>
+  <parameter name="output-file">
+    <description>
+      Name of the output file. Usually a .xml or .kiwi file.
+    </description>
+  </parameter>
+</service>
